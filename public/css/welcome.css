@@ -1,0 +1,91 @@
+* {
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    display: block;
+}
+
+.hero-background {
+    width: 100vw;
+    height:300px;
+
+    background-color: black;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+
+/* 
+    background: linear-gradient(300deg,#355C7D, #355C7D ,#C56CB6,#FF7582);
+    background-size: 240% 240%;
+    animation: gradient-animation 24s ease infinite; */
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+    padding: 10rem 20%;
+    transform: scale(1);
+    transform-origin: top left;
+}
+
+@keyframes gradient-animation {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+#gradient-canvas {
+    --gradient-color-1: #FF7B89;
+    --gradient-color-2: #8A5082;
+    --gradient-color-3: #6F5F90;
+    --gradient-color-4: #758EB7;
+
+    position: absolute;
+    top:0;
+    left:0;
+    height:105%;
+}
+
+.main-hero {
+    /* border:1px solid red; */
+    width: 100%;
+    height: 200px;
+    margin-top:65px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-container {
+    /* border:1px solid red; */
+    height: 100%;
+    width: 1090px;
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 65px;
+}
+
+.main-container button {
+    background-color: rgb(24, 24, 24, .8);
+    color: white;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.main-container .tagline {
+    width: 60%;
+    font-weight: 600;
+    font-size: 82px;
+    line-height: 120%;
+
+    color: rgb(24, 24, 24, .8);
+}

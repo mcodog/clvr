@@ -1,0 +1,13 @@
+.box {
+  width: 390px;
+  height: 240px;
+  transform-origin: 0 0;
+  transition: transform 0.4s;
+}
+
+.box.next {
+  transform:
+    translateX(120px)
+    scaleX(calc(240 / 390))  
+    scaleY(calc(180 / 240)); 
+}
